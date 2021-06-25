@@ -1,0 +1,127 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+body,html
+{
+    height:100%;
+}
+
+#container
+{
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height:100%;
+    overflow: hidden;   
+    position: relative;
+}
+@media only screen and (min-width: 768px) 
+{
+    #container
+    {
+    background-size: 100vw 100vh;
+    }
+}
+.dino
+{
+    background-image: url('tyrannosaurus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:110px;
+    width:86px;
+    position: absolute;
+    bottom:18%;
+}
+.dinoUpClass
+{
+    animation:dinoUpAni 1s linear;
+}
+@keyframes dinoUpAni
+{
+    0%
+    {
+        bottom:18%;
+    }
+    50%
+    {
+        bottom:55%;
+    }
+    100%
+    {
+        bottom:18%;
+    }
+}
+.hedgehog
+{
+    background-image: url('hedgehog.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:50px;
+    width:98px; 
+    background-position: center;
+    position: absolute;
+    bottom: 18%;
+    right:0%;
+}
+.hedgehogAniClass
+{
+    animation: hedgehogAni 2s linear infinite;
+}
+@keyframes hedgehogAni
+{
+    0%{
+        left:100%;
+        bottom:18%; 
+    }
+    100%
+    {
+        left:-12%;
+        bottom:18%;    
+    }
+}  
+.gameStartOver
+{
+    font-size: 4vw;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #301C0C;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.scoreContainer1,.scoreContainer2
+{
+    position: absolute;
+    top:10px;   
+}
+.scoreContainer1{
+    left:10px;
+}
+.scoreContainer2
+{
+    right: 25px;
+}
+#score,#highScore
+{
+    color: #411F15;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-left:2px;
+    margin-bottom: 4px;
+    width:50px;
+    height:20px;
+    padding:1px 3px;
+    border-radius: 7px;
+    border:2px solid #301C0C;
+}
+#music
+{
+    border: none;
+    position: absolute; 
+    margin-right:15px ;
+    cursor: pointer;
+}
