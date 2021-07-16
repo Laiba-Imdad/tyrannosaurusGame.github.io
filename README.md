@@ -1,1 +1,1 @@
-# game.github.io
+# TyrannosaurusGame.github.io
