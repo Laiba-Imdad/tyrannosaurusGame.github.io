@@ -1,7 +1,6 @@
-
 window.onload = function() {
-     setInterval(gameFunc, 10);
-     setTimeout(gameStart, 1500);
+    let b= setInterval(gameFunc, 10);
+    let a= setTimeout(gameStart, 1500);
 }; 
 if (localStorage.getItem('HighScore') == null) {
     document.getElementById('highScore').innerHTML = 0;
